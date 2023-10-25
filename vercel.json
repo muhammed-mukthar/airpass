@@ -1,0 +1,9 @@
+{
+  "git": {
+    "deploymentEnabled": {
+      "mohamed-hussein": false,
+      "abdelrhman-farag": false,
+      "stagging": false
+    }
+  }
+}

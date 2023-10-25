@@ -1,0 +1,222 @@
+.nawras {
+  background-color: #f8f8f8;
+
+  .plan {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h2 {
+      font-size: 35px;
+      font-weight: 550;
+      margin-bottom: 20px;
+      margin: 0;
+    }
+
+    p {
+      max-width: 210px;
+      font-size: 18px;
+      font-weight: 450;
+      margin: 15px 0 0 0;
+    }
+  }
+
+  .birdImage {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .whatIn {
+    padding: 100px 0 30px 0;
+
+    h3 {
+      font-size: 27px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      row-gap: 60px;
+      max-width: 60%;
+
+      .box {
+        margin-bottom: 4px;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        min-width: 211px;
+        min-height: 211px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 3px 6px #00000029;
+
+        p {
+          font-size: 23px;
+          font-weight: 450;
+          margin: 0;
+          sup {
+            font-size: 12px;
+          }
+        }
+
+        p.hired {
+          color: #707070;
+          font-size: 25px;
+          margin: 0;
+          font-weight: 400;
+        }
+
+        p.hired:first-of-type {
+          padding-top: 20px;
+        }
+      }
+
+      .hiringCard {
+        position: relative;
+      }
+
+      .hiringCard::after {
+        content: "Coming Soon";
+        position: absolute;
+        width: 130px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px 5px 0 0;
+        top: -26px;
+        left: calc(50% - 65px);
+        background-color: #ff355e;
+        color: #fff;
+        padding: 3px 0;
+      }
+    }
+  }
+
+  .details {
+    .accordion {
+      padding-top: 30px;
+      background-color: transparent;
+      box-shadow: none;
+      border-top: 2px solid #d6d6d6;
+
+      .wrap-box {
+        padding-bottom: 120px;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 750;
+        margin: 0;
+      }
+
+      ul {
+        margin: 0 0 0 25px;
+        padding: 0;
+
+        p {
+          margin: 0;
+          font-weight: 500;
+          font-size: 20px;
+
+          a {
+            color: #e65a2c;
+            text-decoration: underline;
+          }
+        }
+
+        p.soon {
+          color: #908f8f;
+          font-weight: 400;
+          font-size: 20px;
+        }
+      }
+
+      .icon {
+        background-color: #4b0177;
+        color: #fff;
+      }
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0;
+    border-top: 2px solid #d6d6d6;
+    border-bottom: 2px solid #d6d6d6;
+
+    button {
+      color: #fff;
+      background-color: #e65a2c;
+      border-radius: 6px;
+      border: 1px solid #e65a2c;
+      padding: 15px 55px;
+      font-size: 22px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+
+      &:hover {
+        background-color: #c3441a;
+        border: 1px solid #c3441a;
+      }
+    }
+  }
+
+  .faq {
+    margin-bottom: 120px;
+
+    .accordion {
+      padding-top: 30px;
+      background-color: transparent;
+      box-shadow: none;
+      border-bottom: 2px solid #d6d6d6;
+
+      .wrap-box {
+        padding-bottom: 0px;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 750;
+        margin: 0;
+      }
+
+      .box {
+        margin-bottom: 20px;
+        p.question {
+          font-weight: 650;
+        }
+        p.answer {
+          font-weight: 450;
+        }
+        p {
+          margin: 0;
+          font-size: 23px;
+
+          a {
+            color: #e65a2c;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .icon {
+        background-color: #4b0177;
+        color: #fff;
+      }
+    }
+  }
+}

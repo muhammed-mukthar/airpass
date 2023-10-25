@@ -1,0 +1,44 @@
+.textField1 label::after {
+  content: "*";
+  color: #ff4b00;
+}
+input.cCheckbox[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+.cLabel {
+  cursor: pointer;
+  vertical-align: middle;
+}
+input.cCheckbox[type="checkbox"] + label:before {
+  border: 3px solid rgb(154, 154, 154);
+  content: "";
+  display: inline-block;
+  height: 1.438rem;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 1.438rem;
+  border-radius: 6px;
+}
+input.cCheckbox[type="checkbox"]:checked + label:before {
+  background: #fff;
+  color: #333;
+  content: "";
+  text-align: center;
+  background-image: url("/images/checkMark.svg");
+  background-size: 135%;
+  background-position: 50% 50%;
+}
+input.cCheckbox[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+input.cCheckbox[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+@media screen and (max-width: 570px) {
+  input.cCheckbox[type="checkbox"] + label:before {
+    border-width: 2px;
+  }
+}
